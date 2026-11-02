@@ -1,0 +1,3 @@
+System ID,System Name,Use Case,Business Owner,Technical Owner,System Type,Model/Provider,Deployment Model,Data Processed,Data Sources,Risk Tier,Key Risks,Compliance Obligations,Status,Last Risk Review,Evidence Link
+AI-001,Support Copilot,Summarizes support tickets,Support Ops,Platform Eng,Agentic assistant,GPT-4o (OpenAI),SaaS (API),Support transcripts (PII),CRM;KB;tickets,High-risk,Prompt injection;data leakage,GDPR DPIA,In production,2026-11-02,/assessments/AI-001
+AI-002,Recruiting Screener,Screens CVs for shortlisting,HR,People Eng,Application,Claude (Anthropic),Hosted API,CVs and evaluations (Sensitive),ATS;recruitment,High-risk,Bias;data disclosure,EU AI Act high-risk;GDPR,In design,2026-11-02,/assessments/AI-002

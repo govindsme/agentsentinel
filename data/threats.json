@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "threats": [
+    {
+      "id": "THREAT-PROMPT-INJECTION",
+      "name": "Prompt injection",
+      "category": "LLM Security",
+      "threat_agent": "Remote unauthenticated attacker, malicious content author, compromised third-party tool",
+      "impact": "Data exfiltration, tool misuse, privilege escalation, malicious content generation",
+      "mitigations": [
+        "Input validation and filtering",
+        "Instruction/data separation",
+        "Least-privilege tool execution",
+        "Output filtering and human review for high-impact actions"
+      ],
+      "atlas_ref": "Tactics: Initial Access, Execution, Collection, Exfiltration",
+      "source_id": "owasp-top10-llm"
+    },
+    {
+      "id": "THREAT-TOOL-POISONING",
+      "name": "Agent tool poisoning",
+      "category": "Agentic AI Security",
+      "threat_agent": "Malicious external tool/data author; compromised integrations",
+      "impact": "Unintended agent actions, data leakage, supply-chain compromise of agent workflows",
+      "mitigations": [
+        "Tool trust and integrity verification",
+        "Allowlist of permitted tools",
+        "Human-in-the-loop for high-impact delegated actions",
+        "Monitor tool outputs for tampering"
+      ],
+      "atlas_ref": "Tactics: ML Attack Staging, Defense Evasion, Impact",
+      "source_id": "owasp-agentic-threats"
+    },
+    {
+      "id": "THREAT-DATA-POISONING",
+      "name": "Data poisoning",
+      "category": "Model & Data Security",
+      "threat_agent": "Adversary with access to training supply chain",
+      "impact": "Backdoored or degraded model behavior, biased outputs, security bypasses",
+      "mitigations": [
+        "Dataset provenance and integrity checks",
+        "Anomaly detection over training data",
+        "Periodic re-evaluation of model behavior",
+        "Segregation of untrusted data"
+      ],
+      "atlas_ref": "Tactic: ML Attack Staging - Training Data Poisoning",
+      "source_id": "mitre-atlas"
+    },
+    {
+      "id": "THREAT-SENSITIVE-DATA-LEAK",
+      "name": "Sensitive information disclosure",
+      "category": "Privacy & LLM Security",
+      "threat_agent": "User querying model; model training/retrieval error",
+      "impact": "Disclosure of personal or sensitive data, regulated data exposure, compliance breach",
+      "mitigations": [
+        "Data minimization and redaction",
+        "Output filtering for sensitive content",
+        "Access control on retrieval sources",
+        "DPIA and privacy-by-design"
+      ],
+      "atlas_ref": "Tactic: Exfiltration",
+      "source_id": "owasp-top10-llm"
+    },
+    {
+      "id": "THREAT-MODEL-EXTraction",
+      "name": "Model and training data extraction",
+      "category": "Model Security",
+      "threat_agent": "User with API access; insider",
+      "impact": "Theft of model weights/intellectual property, extraction of memorized training data",
+      "mitigations": [
+        "Rate limiting and query monitoring",
+        "Membership/extraction attack detection",
+        "Distillation resistance where feasible",
+        "Least-privilege model access"
+      ],
+      "atlas_ref": "Tactic: Exfiltration - LLM Theft",
+      "source_id": "mitre-atlas"
+    },
+    {
+      "id": "THREAT-EXCESSIVE-AGENCY",
+      "name": "Excessive agency and delegation abuse",
+      "category": "Agentic AI Security",
+      "threat_agent": "Unauthorized user; compromised agent input",
+      "impact": "Unintended privileged actions, lateral movement, resource misuse",
+      "mitigations": [
+        "Limits on agent autonomy and scope",
+        "Human approval gates for high-impact actions",
+        "Delegation and permission controls",
+        "Comprehensive audit logging"
+      ],
+      "atlas_ref": "Tactics: Execution, Impact",
+      "source_id": "owasp-agentic-ai-risks"
+    },
+    {
+      "id": "THREAT-UNSAFE-SCAFFOLDING",
+      "name": "Unsafe plugin / scaffolding interaction",
+      "category": "LLM Security",
+      "threat_agent": "User controlling plugin input; compromised plugin",
+      "impact": "Arbitrary code execution, data access outside intended scope",
+      "mitigations": [
+        "Sandbox plugins",
+        "Strict input/output validation at plugin boundary",
+        "Least privilege for plugin processes"
+      ],
+      "atlas_ref": "Tactic: Execution",
+      "source_id": "owasp-top10-llm"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# Build output
+site/
+
+# OS / editor
+.DS_Store
+*.swp
+__pycache__/
+*.pyc

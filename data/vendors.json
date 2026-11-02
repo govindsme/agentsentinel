@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "vendors": [
+    {
+      "id": "VENDOR-OPENAI",
+      "name": "OpenAI",
+      "category": "Model provider",
+      "security_resources": "https://openai.com/safety/",
+      "notes": "Published safety research, red teaming practices, and responsible use guidance for GPT-class models."
+    },
+    {
+      "id": "VENDOR-MICROSOFT",
+      "name": "Microsoft",
+      "category": "Platform / Model provider",
+      "security_resources": "https://www.microsoft.com/en-us/ai/tour/responsible-ai",
+      "notes": "Responsible AI framework, AI red teaming tools, and Defender for Cloud AI security capabilities."
+    },
+    {
+      "id": "VENDOR-ANTHROPIC",
+      "name": "Anthropic",
+      "category": "Model provider",
+      "security_resources": "https://www.anthropic.com/research",
+      "notes": "Published research on prompt injection defense, interpretability, and agentic safety."
+    },
+    {
+      "id": "VENDOR-google",
+      "name": "Google",
+      "category": "Platform / Model provider",
+      "security_resources": "https://cloud.google.com/security/ai",
+      "notes": "Secure AI Framework (SAIF) and Vertex AI security features."
+    }
+  ]
+}

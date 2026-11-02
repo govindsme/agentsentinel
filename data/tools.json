@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "tools": [
+    {
+      "id": "TOOL-OWASP-LLM-GUIDE",
+      "name": "OWASP GenAI Security resources",
+      "category": "Guidance",
+      "url": "https://genai.owasp.org/",
+      "purpose": "Security guidance, checklists, and mitigation strategies for LLM and agentic applications.",
+      "source_id": "owasp-top10-llm"
+    },
+    {
+      "id": "TOOL-ATLAS",
+      "name": "MITRE ATLAS Navigator",
+      "category": "Threat model",
+      "url": "https://atlas.mitre.org/",
+      "purpose": "Explore and reference adversarial tactics and techniques for AI systems to support threat modeling.",
+      "source_id": "mitre-atlas"
+    },
+    {
+      "id": "TOOL-NIST-ADV",
+      "name": "NIST Adversarial Machine Learning",
+      "category": "Guidance",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf",
+      "purpose": "Taxonomy and mitigations for adversarial ML attacks on AI systems.",
+      "source_id": null
+    },
+    {
+      "id": "TOOL-AI-TRUST-SAFETY",
+      "name": "AI Trust, Risk and Security Management (AI TRiSM)",
+      "category": "Framework",
+      "url": "https://www.gartner.com/en/articles/ai-trust-risk-and-security-management",
+      "purpose": "Gartner discipline covering model risk, data governance, and security operations for AI.",
+      "source_id": null
+    }
+  ]
+}

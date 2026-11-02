@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "vulnerabilities": [
+    {
+      "id": "VULN-LLM01-PROMPT-INJECTION",
+      "title": "LLM01 - Prompt Injection",
+      "category": "LLM Application",
+      "cwe": "CWE-94 (Improper Control of Generation of Code), CWE-77 (Command Injection)",
+      "cvss_v4_baseline": "9.3",
+      "severity": "critical",
+      "affected_components": [
+        "LLM application prompt handling",
+        "Agent tool interfaces",
+        "RAG/context loading"
+      ],
+      "status": "active",
+      "description": "Manipulating LLMs via crafted inputs to change behavior, including indirect injection through tools or documents, enabling data exfiltration or unintended actions.",
+      "remediation_summary": "Input/output sanitization, instruction-data separation, least-privilege tool access, output filtering, human review for high-impact actions.",
+      "source_ids": ["owasp-top10-llm", "owasp-agentic-threats"],
+      "discovered": "2023-09-01",
+      "last_assessed": "2026-11-02"
+    },
+    {
+      "id": "VULN-LLM02-INVALID-OUTPUT",
+      "title": "LLM02 - Insecure Output Handling",
+      "category": "LLM Application",
+      "cwe": "CWE-79 (XSS), CWE-94, CWE-78 (OS Command Injection)",
+      "cvss_v4_baseline": "8.5",
+      "severity": "high",
+      "affected_components": [
+        "Front-end rendering of LLM output",
+        "Downstream systems consuming LLM output",
+        "Agent actions triggered by output"
+      ],
+      "status": "active",
+      "description": "Treating LLM output as trusted without validation, leading to XSS, command injection, or unsafe downstream action.",
+      "remediation_summary": "Validate, encode, and sanitize all LLM outputs; treat output as untrusted at every downstream boundary.",
+      "source_ids": ["owasp-top10-llm"],
+      "discovered": "2023-09-01",
+      "last_assessed": "2026-11-02"
+    },
+    {
+      "id": "VULN-DATA-POISONING",
+      "title": "Data poisoning",
+      "category": "Model / Supply Chain",
+      "cwe": "CWE-501 (Trust Boundary Violation)",
+      "cvss_v4_baseline": "8.5",
+      "severity": "high",
+      "affected_components": [
+        "Training datasets",
+        "Fine-tuning pipelines",
+        "Embedding/vector stores"
+      ],
+      "status": "active",
+      "description": "Adversarial manipulation of training data to backdoor, bias, or degrade model behavior.",
+      "remediation_summary": "Dataset provenance and integrity, anomaly detection, poisoned-data filtering, re-evaluation of model behavior.",
+      "source_ids": ["mitre-atlas", "nist-ai-rmf-generative-ai-profile"],
+      "discovered": "2022-01-01",
+      "last_assessed": "2026-11-02"
+    },
+    {
+      "id": "VULN-MODEL-EXTRACTION",
+      "title": "Model and data extraction",
+      "category": "Model Security",
+      "cwe": "CWE-200 (Information Exposure)",
+      "cvss_v4_baseline": "7.5",
+      "severity": "high",
+      "affected_components": [
+        "Model inference APIs",
+        "Hosted foundation models"
+      ],
+      "status": "active",
+      "description": "Query-based reconstruction of model behavior or extraction of memorized training data.",
+      "remediation_summary": "Rate limiting, query monitoring, membership attack detection, access control.",
+      "source_ids": ["mitre-atlas", "nist-ai-rmf-generative-ai-profile"],
+      "discovered": "2016-01-01",
+      "last_assessed": "2026-11-02"
+    },
+    {
+      "id": "VULN-EXCESSIVE-AGENCY",
+      "title": "Excessive agency in agentic systems",
+      "category": "Agentic AI",
+      "cwe": "CWE-863 (Incorrect Authorization)",
+      "cvss_v4_baseline": "9.0",
+      "severity": "critical",
+      "affected_components": [
+        "AI agent orchestration",
+        "Tool/API integrations",
+        "Delegation chains",
+        "Memory stores"
+      ],
+      "status": "active",
+      "description": "Agentic systems granted excessive autonomy, privilege, or tool access leading to unintended high-impact or irreversible actions.",
+      "remediation_summary": "Limit autonomy, enforce least-privilege tool access, add human approval gates, document and constrain permitted actions.",
+      "source_ids": ["owasp-agentic-threats", "owasp-agentic-ai-risks"],
+      "discovered": "2024-01-01",
+      "last_assessed": "2026-11-02"
+    },
+    {
+      "id": "VULN-SENSITIVE-DISCLOSURE",
+      "title": "Sensitive information disclosure",
+      "category": "Privacy / LLM Application",
+      "cwe": "CWE-200 (Information Exposure)",
+      "cvss_v4_baseline": "8.0",
+      "severity": "high",
+      "affected_components": [
+        "LLM outputs",
+        "RAG retrieval sources",
+        "Training data"
+      ],
+      "status": "active",
+      "description": "Model or application discloses personal, sensitive, or regulated data via outputs or retrieval.",
+      "remediation_summary": "Data minimization, output redaction/filtering, access controls on retrieval, DPIA.",
+      "source_ids": ["owasp-top10-llm", "gdpr"],
+      "discovered": "2023-01-01",
+      "last_assessed": "2026-11-02"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "controls": [
+    {
+      "id": "CTRL-PROMPT-INJECTION-DEFENSE",
+      "domain": "LLM Security",
+      "name": "Prompt injection defense",
+      "description": "Detect and neutralize prompt injection via input validation, output filtering, separation of instructions from data, and least-privilege tool execution.",
+      "controls": [
+        "NIST AI RMF: Govern/MAP - risk identification",
+        "OWASP LLM01 mitigations",
+        "IEEE/CSA LLM controls"
+      ],
+      "verification": "Red-team prompt injection tests; adversarial input corpus; tool call allowlisting.",
+      "implementation_guidance": "Use dual LLM or classifier-based detection, delimiters, instruction/data separation, and tool permission boundaries.",
+      "frameworks": ["nist-ai-rmf", "owasp-top10-llm"]
+    },
+    {
+      "id": "CTRL-SBOM-DATA-GOVERNANCE",
+      "domain": "Data Governance",
+      "name": "AI data governance and lineage",
+      "description": "Inventory training, validation, and test data; enforce provenance, licensing, and PII handling; protect against data poisoning and sensitive data leakage.",
+      "controls": [
+        "EU AI Act high-risk data governance obligations",
+        "GDPR data protection by design",
+        "NIST AI RMF MAP"
+      ],
+      "verification": "Data lineage audit; poison-attack simulations; data classification review.",
+      "implementation_guidance": "Maintain data catalogs, implement data classification, and use detection pipelines for anomalous training data.",
+      "frameworks": ["eu-ai-act", "nist-ai-rmf"]
+    },
+    {
+      "id": "CTRL-PRIVILEGE-TOOLS",
+      "domain": "Agentic AI",
+      "name": "Least-privilege tool and delegated action control",
+      "description": "Limit agent access to tools, APIs, and data using least privilege, allowlists, human-in-the-loop checks for high-impact actions, and sandboxing.",
+      "controls": [
+        "OWASP Agentic AI tool poisoning mitigations",
+        "NIST AI RMF MANAGE"
+      ],
+      "verification": "Test tool permission matrix; simulate delegated abuse; code review of tool integration.",
+      "implementation_guidance": "Apply human approval gates to irreversible/high-privilege actions and enforce resource quotas.",
+      "frameworks": ["owasp-agentic-ai", "nist-ai-rmf"]
+    },
+    {
+      "id": "CTRL-THREAT-MODELING",
+      "domain": "Security Operations",
+      "name": "AI-specific threat modeling",
+      "description": "Apply AI threat models (MITRE ATLAS, ENISA) to identify, score, and track AI-specific threats systemically.",
+      "controls": [
+        "MITRE ATLAS",
+        "ENISA AI Threat Landscape"
+      ],
+      "verification": "Threat model review; coverage check against ATLAS techniques.",
+      "implementation_guidance": "Maintain per-system threat models and map findings to controls and backlog.",
+      "frameworks": ["mitre-atlas"]
+    },
+    {
+      "id": "CTRL-MONITORING-RESPONSE",
+      "domain": "AI Operations",
+      "name": "AI security monitoring and incident response",
+      "description": "Monitor model inputs/outputs, drift, anomalies, and adversarial events; maintain an AI-specific incident response plan.",
+      "controls": [
+        "NIST AI RMF MEASURE",
+        "ISO/IEC 42001 operations"
+      ],
+      "verification": "Drift and anomaly detection tests; tabletop incident exercises.",
+      "implementation_guidance": "Log prompt/response, detect poisoning and extraction attempts, and define an AI incident taxonomy.",
+      "frameworks": ["nist-ai-rmf", "iso-iec-42001"]
+    },
+    {
+      "id": "CTRL-VENDOR-PROCUREMENT",
+      "domain": "Supply Chain",
+      "name": "AI supplier and model procurement assessment",
+      "description": "Assess AI suppliers and foundation models for security, transparency, compliance, and drift risk before procurement.",
+      "controls": [
+        "ESG/AI procurement frameworks",
+        "ISO/IEC 42001 stakeholder requirements"
+      ],
+      "verification": "Supplier questionnaire; model transparency review; security assessment.",
+      "implementation_guidance": "Include AI-specific criteria in procurement and enforce contractual assurance obligations.",
+      "frameworks": ["iso-iec-42001"]
+    },
+    {
+      "id": "CTRL-AUDIT-EVIDENCE",
+      "domain": "Audit & Assurance",
+      "name": "AI control audit and evidence collection",
+      "description": "Produce auditable evidence of AI risk management, controls operation, and compliance to support internal and third-party assurance.",
+      "controls": [
+        "ISO/IEC 42001 audit requirements",
+        "EU AI Act technical documentation"
+      ],
+      "verification": "Control effectiveness evaluation; evidence traceability review.",
+      "implementation_guidance": "Map controls to evidence, maintain change records, and support conformity assessments.",
+      "frameworks": ["iso-iec-42001", "eu-ai-act"]
+    }
+  ]
+}

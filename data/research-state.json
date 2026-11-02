@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "site_version": "1.0.0",
+  "repo": "govindsme/agentsentinel",
+  "site_url": "https://govindsme.github.io/agentsentinel/",
+  "previous_research_cutoff": null,
+  "previous_vulnerability_cutoff": null,
+  "current_research_cutoff": "2026-11-02",
+  "current_vulnerability_cutoff": "2026-11-02",
+  "operating_mode": "first_run",
+  "last_successful_run": null,
+  "runs_total": 1,
+  "status": "initialized",
+  "notes": "First run establishing the initial content baseline and information architecture for the Agent Sentinel AI security and governance site."
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "remediation_actions": [
+    {
+      "vulnerability_id": "VULN-LLM01-PROMPT-INJECTION",
+      "action": "Implement input validation and malicious-prompt filtering at the application boundary",
+      "type": "technical",
+      "priority": "critical",
+      "owners": ["application-security", "platform-engineering"],
+      "evidence": "Red-team prompt injection test results; tool-call allowlist configuration"
+    },
+    {
+      "vulnerability_id": "VULN-LLM01-PROMPT-INJECTION",
+      "action": "Enforce least-privilege tool access and human approval for high-impact actions",
+      "type": "technical",
+      "priority": "critical",
+      "owners": ["platform-engineering", "security-operations"],
+      "evidence": "Permission matrix review; approval-gate test evidence"
+    },
+    {
+      "vulnerability_id": "VULN-LLM02-INVALID-OUTPUT",
+      "action": "Treat LLM output as untrusted and validate/encode at every downstream boundary",
+      "type": "technical",
+      "priority": "high",
+      "owners": ["application-security"],
+      "evidence": "Output-handling code review; XSS/injection test evidence"
+    },
+    {
+      "vulnerability_id": "VULN-DATA-POISONING",
+      "action": "Inventory training data sources and enforce provenance and integrity checks",
+      "type": "process",
+      "priority": "high",
+      "owners": ["data-governance", "model-operations"],
+      "evidence": "Data lineage records; anomaly detection pipeline test evidence"
+    },
+    {
+      "vulnerability_id": "VULN-EXCESSIVE-AGENCY",
+      "action": "Constrain agent autonomy and document permitted actions with human approval gates",
+      "type": "technical",
+      "priority": "critical",
+      "owners": ["platform-engineering", "product"],
+      "evidence": "Agent capability matrix; autonomy test results"
+    },
+    {
+      "vulnerability_id": "VULN-MODEL-EXTRACTION",
+      "action": "Apply rate limiting, query monitoring, and membership attack detection to model APIs",
+      "type": "technical",
+      "priority": "high",
+      "owners": ["platform-engineering", "security-operations"],
+      "evidence": "Abuse-detection test evidence; rate-limit configuration review"
+    },
+    {
+      "vulnerability_id": "VULN-SENSITIVE-DISCLOSURE",
+      "action": "Apply data minimization, output redaction, and retrieval access controls",
+      "type": "technical",
+      "priority": "high",
+      "owners": ["privacy", "application-security"],
+      "evidence": "DPIA completion; redaction test evidence; retrieval access audit"
+    },
+    {
+      "vulnerability_id": "ALL",
+      "action": "Run periodic full reconciliation to revalidate active vulnerability records and discover new AI vulnerabilities",
+      "type": "process",
+      "priority": "high",
+      "owners": ["security-research"],
+      "evidence": "Run reports in reports/runs/"
+    }
+  ]
+}

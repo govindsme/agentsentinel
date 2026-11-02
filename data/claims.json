@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "claims": [
+    {
+      "id": "C-001",
+      "claim": "Prompt injection is the highest-impact class of risk for LLM applications, enabling data exfiltration, privilege escalation, and tool misuse.",
+      "claim_type": "sourced_fact",
+      "source_id": "owasp-top10-llm",
+      "confidence": "high",
+      "verified": true,
+      "verified_on": "2026-11-02",
+      "notes": "Ranked as the top risk (LLM01) in OWASP Top 10 for LLM Applications."
+    },
+    {
+      "id": "C-002",
+      "claim": "The EU AI Act entered into force on 1 August 2024, with prohibitions applying from 2 February 2025 and most provisions applying from 2 August 2026.",
+      "claim_type": "sourced_fact",
+      "source_id": "eu-ai-act",
+      "confidence": "high",
+      "verified": true,
+      "verified_on": "2026-11-02",
+      "notes": "Regulation (EU) 2024/1689 application dates."
+    },
+    {
+      "id": "C-003",
+      "claim": "NIST AI RMF defines four core functions - Govern, Map, Measure, Manage - applied across the AI lifecycle.",
+      "claim_type": "sourced_fact",
+      "source_id": "nist-ai-rmf-1.0",
+      "confidence": "high",
+      "verified": true,
+      "verified_on": "2026-11-02",
+      "notes": "Core framework structure of AI RMF 1.0."
+    },
+    {
+      "id": "C-004",
+      "claim": "ISO/IEC 42001:2023 is the first certifiable AI management system (AIMS) standard.",
+      "claim_type": "sourced_fact",
+      "source_id": "iso-iec-42001",
+      "confidence": "high",
+      "verified": true,
+      "verified_on": "2026-11-02",
+      "notes": "Published December 2023."
+    },
+    {
+      "id": "C-005",
+      "claim": "Agentic AI introduces new risk categories including tool poisoning, delegation abuse, inadequate oversight, and unbounded autonomy.",
+      "claim_type": "sourced_fact",
+      "source_id": "owasp-agentic-threats",
+      "confidence": "high",
+      "verified": true,
+      "verified_on": "2026-11-02",
+      "notes": "OWASP Agentic AI threats and mitigations publication."
+    },
+    {
+      "id": "C-006",
+      "claim": "Sensitive data leakage via model outputs and training data extraction are material privacy risks for LLM systems.",
+      "claim_type": "sourced_fact",
+      "source_id": "owasp-top10-llm",
+      "confidence": "high",
+      "verified": true,
+      "verified_on": "2026-11-02",
+      "notes": "LLM09 Sensitive Information Disclosure in OWASP Top 10 for LLM."
+    },
+    {
+      "id": "C-007",
+      "claim": "High-risk AI systems under the EU AI Act will require conformity assessment, risk management, data governance, and transparency obligations before placing on the EU market.",
+      "claim_type": "sourced_fact",
+      "source_id": "eu-ai-act",
+      "confidence": "high",
+      "verified": true,
+      "verified_on": "2026-11-02",
+      "notes": "Title III obligations for high-risk systems."
+    }
+  ]
+}

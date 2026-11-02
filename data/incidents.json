@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "incidents": [
+    {
+      "id": "INC-01",
+      "date": "2023",
+      "type": "Prompt injection / data exfiltration",
+      "summary": "Public demonstrations showed that indirect prompt injection via web content could manipulate LLM agents to exfiltrate data or take unintended actions.",
+      "relevance": "Highlighted the need for instruction/data separation and least-privilege tool access.",
+      "source_id": "owasp-top10-llm",
+      "status": "tracked"
+    },
+    {
+      "id": "INC-02",
+      "date": "2023",
+      "type": "Model extraction / training data leakage",
+      "summary": "Research demonstrated that LLMs can memorize and reproduce sensitive training data under specific queries.",
+      "relevance": "Drives requirements for data minimization, privacy filters, and membership attack defenses.",
+      "source_id": "mitre-atlas",
+      "status": "tracked"
+    },
+    {
+      "id": "INC-03",
+      "date": "2024-2026",
+      "type": "Agentic AI tool misuse",
+      "summary": "Adoption of AI agents raised reports of excessive agency incidents where agents performed unintended high-privilege or irreversible actions.",
+      "relevance": "Supports authentication, approval gates, and autonomy limits for agentic systems.",
+      "source_id": "owasp-agentic-threats",
+      "status": "tracked"
+    }
+  ]
+}

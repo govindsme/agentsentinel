@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "crosswalks": [
+    {
+      "source_framework": "EU AI Act",
+      "target_framework": "NIST AI RMF",
+      "mapping": [
+        { "eu_ai_act": "Risk management system (Art 9)", "nist_ai_rmf": "Govern & Manage" },
+        { "eu_ai_act": "Data governance (Art 10)", "nist_ai_rmf": "Map - data lifecycle" },
+        { "eu_ai_act": "Technical documentation (Art 11)", "nist_ai_rmf": "Govern - documentation & transparency" },
+        { "eu_ai_act": "Human oversight (Art 14)", "nist_ai_rmf": "Manage - human-AI teaming" },
+        { "eu_ai_act": "Accuracy, robustness, cybersecurity (Art 15)", "nist_ai_rmf": "Measure & Manage" },
+        { "eu_ai_act": "Transparency (Art 13)", "nist_ai_rmf": "Govern - transparency & accountability" }
+      ],
+      "notes": "EU AI Act can be operationalized using NIST AI RMF practices."
+    },
+    {
+      "source_framework": "OWASP Top 10 for LLM Applications",
+      "target_framework": "MITRE ATLAS",
+      "mapping": [
+        { "owasp_llm": "LLM01 Prompt Injection", "atlas": "Initial Access, Execution, Collection, Exfiltration" },
+        { "owasp_llm": "LLM02 Insecure Output Handling", "atlas": "Execution, Impact" },
+        { "owasp_llm": "LLM04 Tool Poisoning", "atlas": "ML Attack Staging" },
+        { "owasp_llm": "LLM09 Sensitive Information Disclosure", "atlas": "Exfiltration, Collection" }
+      ],
+      "notes": "Technical risk categories map to adversarial techniques for testing and detection."
+    },
+    {
+      "source_framework": "ISO/IEC 42001",
+      "target_framework": "NIST AI RMF",
+      "mapping": [
+        { "iso_42001": "AI management system (AIMS)", "nist_ai_rmf": "Govern" },
+        { "iso_42001": "Risk assessment (10.4 / Annex B)", "nist_ai_rmf": "Map & Measure" },
+        { "iso_42001": "Operational controls / AI risk treatment", "nist_ai_rmf": "Manage" },
+        { "iso_42001": "Measurement and evaluation (9)", "nist_ai_rmf": "Measure" }
+      ],
+      "notes": "ISO/IEC 42001 provides a certifiable management-system wrapper for NIST AI RMF practices."
+    },
+    {
+      "source_framework": "OWASP Top 10 (Web 2021)",
+      "target_framework": "OWASP Top 10 for LLM Applications",
+      "mapping": [
+        { "owasp_web": "Injection (A03)", "owasp_llm": "LLM01 Prompt Injection" },
+        { "owasp_web": "Security Misconfiguration (A05)", "owasp_llm": "LLM06 Excessive Agency, LLM08 Excessive Agency" },
+        { "owasp_web": "Sensitive Data Exposure (A02)", "owasp_llm": "LLM09 Sensitive Information Disclosure" },
+        { "owasp_web": "Insecure Design (A04)", "owasp_llm": "LLM05 Supply-Chain, LLM02 Insecure Output Handling" }
+      ],
+      "notes": "Classic web risks re-express as LLM-specific risk categories."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "jurisdictions": [
+    {
+      "jurisdiction": "European Union",
+      "level_of_maturity": "high",
+      "primary_instruments": [
+        "EU AI Act (Regulation (EU) 2024/1689)",
+        "GDPR (Regulation (EU) 2016/679)",
+        "AI Liability Directive (proposed)"
+      ],
+      "enforceability": "binding",
+      "notes": "Comprehensive risk-based binding regulation with conformity assessment for high-risk systems.",
+      "source_id": "eu-ai-act"
+    },
+    {
+      "jurisdiction": "United Kingdom",
+      "level_of_maturity": "medium",
+      "primary_instruments": [
+        "UK AI whitepaper and sector-led approach",
+        "UK GDPR (retained)",
+        "Proposed AI legislation"
+      ],
+      "enforceability": "sector-based",
+      "notes": "Principles-based, pro-innovation approach leveraging sector regulators; legislation under development.",
+      "source_id": null
+    },
+    {
+      "jurisdiction": "United States",
+      "level_of_maturity": "medium",
+      "primary_instruments": [
+        "EO on Safe, Secure, and Trustworthy AI",
+        "NIST AI RMF (voluntary)",
+        "Sector regulation (health, financial, federal procurement)"
+      ],
+      "enforceability": "sector-based",
+      "notes": "No single federal AI law; mix of voluntary frameworks, executive action, sector rules, and state law.",
+      "source_id": "cisa-ai-security"
+    },
+    {
+      "jurisdiction": "Canada",
+      "level_of_maturity": "medium",
+      "primary_instruments": [
+        "AIDA - Artificial Intelligence and Data Act (proposed)",
+        "Directive on Automated Decision-Making (federal)"
+      ],
+      "enforceability": "proposed",
+      "notes": "AIDA under Parliament; federal Directive applies to government automated decision systems.",
+      "source_id": null
+    },
+    {
+      "jurisdiction": "China",
+      "level_of_maturity": "high",
+      "primary_instruments": [
+        "Interim Measures for Generative AI",
+        "Regulations on Recommendation Algorithms",
+        "Deep Synthesis Provisions"
+      ],
+      "enforceability": "binding",
+      "notes": "Multiple binding measures targeting generative AI, algorithms, and deepfakes.",
+      "source_id": null
+    },
+    {
+      "jurisdiction": "Singapore",
+      "level_of_maturity": "medium",
+      "primary_instruments": [
+        "Model AI Governance Framework",
+        "Generative AI Model Governance Framework"
+      ],
+      "enforceability": "voluntary",
+      "notes": "Influential voluntary frameworks providing practical governance guidance.",
+      "source_id": null
+    }
+  ],
+  "notes": "Regulatory landscape changes frequently. Revalidate instrument status and applicability on every reconciliation run."
+}

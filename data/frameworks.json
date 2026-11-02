@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "frameworks": [
+    {
+      "id": "nist-ai-rmf",
+      "name": "NIST AI Risk Management Framework",
+      "org": "NIST",
+      "type": "voluntary-framework",
+      "version": "1.0",
+      "functions": ["Govern", "Map", "Measure", "Manage"],
+      "purpose": "Voluntary framework to manage AI risk across the lifecycle and promote trustworthy AI.",
+      "source_id": "nist-ai-rmf-1.0",
+      "notes": "Includes Generative AI Profile published 2024."
+    },
+    {
+      "id": "iso-iec-42001",
+      "name": "ISO/IEC 42001:2023 AIMS",
+      "org": "ISO/IEC",
+      "type": "management-system-standard",
+      "version": "2023",
+      "functions": ["Context", "Leadership", "Planning", "Support", "Operation", "Performance evaluation", "Improvement"],
+      "purpose": "Certifiable AI management system standard aligning AI governance with organizational management.",
+      "source_id": "iso-iec-42001",
+      "notes": "Companion to ISO/IEC 23894 risk guidance."
+    },
+    {
+      "id": "owasp-top10-llm",
+      "name": "OWASP Top 10 for LLM Applications",
+      "org": "OWASP",
+      "type": "technical-control-baseline",
+      "version": "2025",
+      "functions": ["LLM01..LLM10"],
+      "purpose": "Most critical security risks in LLM applications and technical mitigations.",
+      "source_id": "owasp-top10-llm",
+      "notes": "Risk categories updated in 2025 release."
+    },
+    {
+      "id": "mitre-atlas",
+      "name": "MITRE ATLAS",
+      "org": "MITRE",
+      "type": "threat-model",
+      "version": "current",
+      "functions": ["Reconnaissance", "Resource Development", "Initial Access", "ML Model Access", "Execution", "Persistence", "Privilege Escalation", "Defense Evasion", "Credential Access", "Discovery", "Collection", "ML Attack Staging", "Exfiltration", "Impact"],
+      "purpose": "Knowledge base of adversary tactics and techniques specific to AI/ML systems.",
+      "source_id": "mitre-atlas",
+      "notes": "Extends ATT&CK concepts to ML systems."
+    },
+    {
+      "id": "eu-ai-act",
+      "name": "EU Artificial Intelligence Act",
+      "org": "European Union",
+      "type": "regulation",
+      "version": "Regulation (EU) 2024/1689",
+      "functions": ["Risk classification", "Prohibitions", "High-risk obligations", "GPAI obligations", "Transparency", "Governance", "Market surveillance"],
+      "purpose": "Comprehensive risk-based legal framework for AI in the EU.",
+      "source_id": "eu-ai-act",
+      "notes": "Entered into force 1 Aug 2024."
+    },
+    {
+      "id": "owasp-agentic-ai",
+      "name": "OWASP Top 10 for Agentic AI",
+      "org": "OWASP",
+      "type": "technical-control-baseline",
+      "version": "2025",
+      "functions": ["Agentic AI risks 1-10"],
+      "purpose": "Top risks specific to agentic AI systems including tooling, delegation, and autonomy.",
+      "source_id": "owasp-agentic-ai-risks",
+      "notes": "Complements the LLM Top 10."
+    }
+  ]
+}

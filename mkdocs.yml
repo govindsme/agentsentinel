@@ -1,0 +1,97 @@
+site_name: Agent Sentinel - AI Security & Governance Reference
+site_description: A continuously maintained, evidence-based knowledge site covering AI security, agentic AI, AI governance, AI risk management, privacy, regulations, frameworks, and AI-related vulnerabilities.
+site_author: Agent Sentinel
+repo_url: https://github.com/govindsme/agentsentinel
+repo_name: govindsme/agentsentinel
+copyright: "&copy; Agent Sentinel. Reference content for learning and audit. Not legal advice."
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+  icon:
+    logo: material/shield-check
+
+nav:
+  - Home: index.md
+  - AI Security Domains:
+      - AI Security Overview: domains/ai-security.md
+      - Generative AI & LLM Security: domains/genai-llm-security.md
+      - Agentic AI Security: domains/agentic-ai-security.md
+      - AI Governance & Responsible AI: domains/ai-governance.md
+      - AI Risk Management & Assurance: domains/ai-risk.md
+      - AI Privacy & Data Protection: domains/ai-privacy.md
+      - Model, Data & Platform Security: domains/model-data-platform-security.md
+      - AI Supply Chain Security: domains/ai-supply-chain.md
+  - Threats & Controls:
+      - Threat Landscape: threats/index.md
+      - Controls & Frameworks: controls/index.md
+      - Control Crosswalks: controls/crosswalks.md
+  - Regulations & Standards:
+      - Regulatory Landscape: regulations/index.md
+      - EU AI Act: regulations/eu-ai-act.md
+      - NIST AI RMF: regulations/nist-ai-rmf.md
+      - ISO/IEC 42001: regulations/iso-42001.md
+      - Jurisdiction Matrix: regulations/jurisdiction-matrix.md
+  - Vulnerabilities:
+      - Vulnerability Index: vulnerabilities/index.md
+      - Vulnerability Records: vulnerabilities/records/index.md
+  - Governance Resources:
+      - AI Inventory Template: resources/ai-inventory.md
+      - AI Risk Assessment Template: resources/ai-risk-assessment.md
+      - Glossary: references/glossary.md
+      - Sources: references/sources.md
+  - Research & Change:
+      - Research State: research/research-state.md
+      - Update History: research/update-history.md
+      - Run Reports: research/run-reports.md
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - attr_list
+  - md_in_html
+  - tables
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+
+plugins:
+  - search

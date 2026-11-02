@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "update_history": [
+    {
+      "date": "2026-11-02",
+      "version": "1.0.0",
+      "run": "first-run",
+      "mode": "first_run",
+      "summary": "Initial build of the Agent Sentinel AI security and governance knowledge site. Established information architecture, structured data records, templates, validation, and GitHub Pages deployment.",
+      "statistics": {
+        "pages_created": 0,
+        "data_records_created": true,
+        "validation_passed": null
+      }
+    }
+  ]
+}

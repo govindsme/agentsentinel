@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "glossary": [
+    {
+      "term": "AI system",
+      "definition": "A machine-based system that infers, from given inputs, how to generate outputs (predictions, content, recommendations, decisions) that influence environments.",
+      "source_id": null
+    },
+    {
+      "term": "Agentic AI",
+      "definition": "AI systems that pursue goals with a degree of autonomy, often using tools, memory, and delegation to take actions in a digital or physical environment.",
+      "source_id": "owasp-agentic-threats"
+    },
+    {
+      "term": "Prompt injection",
+      "definition": "An attack that manipulates an LLM through crafted inputs, including indirect injection via content consumed from tools or documents, to alter its behavior.",
+      "source_id": "owasp-top10-llm"
+    },
+    {
+      "term": "Data poisoning",
+      "definition": "Adversarial manipulation of training data to degrade, bias, or backdoor model behavior.",
+      "source_id": "mitre-atlas"
+    },
+    {
+      "term": "Model extraction",
+      "definition": "An attack that reconstructs model behavior (or even weights) through queries, enabling theft or further attacks.",
+      "source_id": "mitre-atlas"
+    },
+    {
+      "term": "High-risk AI system",
+      "definition": "Under the EU AI Act, AI systems in specified high-impact use cases that must meet mandatory requirements before deployment.",
+      "source_id": "eu-ai-act"
+    },
+    {
+      "term": "GPAI",
+      "definition": "General-Purpose AI model - a model with significant generality that can perform a wide range of tasks, subject to specific EU AI Act obligations.",
+      "source_id": "eu-ai-act"
+    },
+    {
+      "term": "AI inventory",
+      "definition": "A catalog of all AI systems and models used by an organization, forming the basis for risk assessment and governance.",
+      "source_id": null
+    },
+    {
+      "term": "Red teaming",
+      "definition": "Adversarial testing by a team that simulates attacks to identify vulnerabilities in AI systems before release.",
+      "source_id": null
+    },
+    {
+      "term": "Model drift",
+      "definition": "Degradation of model performance over time due to changes in input data distribution or environment.",
+      "source_id": null
+    }
+  ]
+}

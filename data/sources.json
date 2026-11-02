@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "sources": [
+    {
+      "id": "nist-ai-rmf-1.0",
+      "title": "NIST AI Risk Management Framework (AI RMF) 1.0",
+      "org": "National Institute of Standards and Technology",
+      "type": "framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "published": "2023-01-26",
+      "authority": "high",
+      "notes": "Voluntary framework for managing AI risk across the AI lifecycle (Govern, Map, Measure, Manage)."
+    },
+    {
+      "id": "nist-ai-rmf-generative-ai-profile",
+      "title": "NIST AI RMF Generative AI Profile",
+      "org": "National Institute of Standards and Technology",
+      "type": "framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-generative-ai-profile",
+      "published": "2024-07-26",
+      "authority": "high",
+      "notes": "Profile applying the AI RMF to generative AI risks and mitigations."
+    },
+    {
+      "id": "owasp-top10-llm",
+      "title": "OWASP Top 10 for LLM Applications",
+      "org": "OWASP",
+      "type": "guidance",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "published": "2023-10-11",
+      "authority": "high",
+      "notes": "Top 10 security risks in LLM applications, updated annually/major release."
+    },
+    {
+      "id": "owasp-agentic-threats",
+      "title": "OWASP Agentic AI - Threats and Mitigations",
+      "org": "OWASP",
+      "type": "guidance",
+      "url": "https://genai.owasp.org/",
+      "published": "2025-06-01",
+      "authority": "high",
+      "notes": "Threat model and mitigations for agentic AI systems, published June 2025."
+    },
+    {
+      "id": "owasp-agentic-ai-risks",
+      "title": "OWASP Top 10 for Agentic AI",
+      "org": "OWASP",
+      "type": "guidance",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-ai/",
+      "published": "2025-01-01",
+      "authority": "high",
+      "notes": "Top 10 risks specific to agentic AI (agents, tools, memory, delegation)."
+    },
+    {
+      "id": "eu-ai-act",
+      "title": "Regulation (EU) 2024/1689 - Artificial Intelligence Act",
+      "org": "European Union",
+      "type": "regulation",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "published": "2024-07-12",
+      "authority": "lawful",
+      "notes": "First comprehensive AI law; risk-based framework with prohibitions, high-risk requirements, GPAI obligations, and transparency."
+    },
+    {
+      "id": "iso-iec-42001",
+      "title": "ISO/IEC 42001:2023 Information technology - Artificial intelligence - Management system",
+      "org": "ISO/IEC",
+      "type": "standard",
+      "url": "https://www.iso.org/standard/81230.html",
+      "published": "2023-12-18",
+      "authority": "standard",
+      "notes": "First certifiable AI management system (AIMS) standard."
+    },
+    {
+      "id": "iso-iec-23894",
+      "title": "ISO/IEC 23894:2023 AI - Guidance on risk management",
+      "org": "ISO/IEC",
+      "type": "standard",
+      "url": "https://www.iso.org/standard/77304.html",
+      "published": "2023-02-01",
+      "authority": "standard",
+      "notes": "AI-specific risk management guidance aligned with ISO 31000."
+    },
+    {
+      "id": "mitre-atlas",
+      "title": "MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems)",
+      "org": "MITRE",
+      "type": "threat-model",
+      "url": "https://atlas.mitre.org/",
+      "published": "2022-09-01",
+      "authority": "high",
+      "notes": "Knowledge base of adversary tactics and techniques for AI/ML systems."
+    },
+    {
+      "id": "enisa-ai-threat",
+      "title": "ENISA - AI Threat Landscape",
+      "org": "ENISA",
+      "type": "report",
+      "url": "https://www.enisa.europa.eu/publications/artificial-intelligence-threat-landscape",
+      "published": "2023-10-01",
+      "authority": "high",
+      "notes": "EU agency analysis mapping the AI threat landscape and attack taxonomy."
+    },
+    {
+      "id": "cloud-security-alliance-ai",
+      "title": "CSA - AI Security Initiative & LLM & Generative AI Application Security",
+      "org": "Cloud Security Alliance",
+      "type": "guidance",
+      "url": "https://cloudsecurityalliance.org/artifacts/llm-and-generative-ai-application-security-controls",
+      "published": "2024-01-01",
+      "authority": "medium",
+      "notes": "Security controls for LLM and generative AI applications."
+    },
+    {
+      "id": "gdpr",
+      "title": "General Data Protection Regulation (EU) 2016/679",
+      "org": "European Union",
+      "type": "regulation",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "published": "2016-04-27",
+      "authority": "lawful",
+      "notes": "EU data protection law applicable to AI systems processing personal data."
+    },
+    {
+      "id": "cisa-ai-security",
+      "title": "CISA - Roadmap for AI",
+      "org": "CISA (US Cybersecurity and Infrastructure Security Agency)",
+      "type": "guidance",
+      "url": "https://www.cisa.gov/resources-tools/resources/cisa-ai-roadmap",
+      "published": "2024-01-01",
+      "authority": "medium",
+      "notes": "US agency roadmap for AI-related security priorities."
+    },
+    {
+      "id": "owasp-top10-2021",
+      "title": "OWASP Top 10 Web Application Security Risks (2021)",
+      "org": "OWASP",
+      "type": "guidance",
+      "url": "https://owasp.org/www-project-top-ten/",
+      "published": "2021-09-01",
+      "authority": "high",
+      "notes": "Foundational web application security risks referenced across AI systems."
+    }
+  ]
+}

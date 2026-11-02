@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "evaluations": [
+    {
+      "id": "EVAL-01",
+      "name": "OWASP Top 10 for LLM Applications assessment",
+      "type": "technical-control-assessment",
+      "scope": "LLM application security posture",
+      "method": "Map application to the ten LLM risk categories and evaluate applicable mitigations.",
+      "output": "Risk heatmap and remediation backlog",
+      "status": "template_available"
+    },
+    {
+      "id": "EVAL-02",
+      "name": "NIST AI RMF maturity assessment",
+      "type": "risk-management-assessment",
+      "scope": "Organizational AI risk management",
+      "method": "Assess maturity across Govern, Map, Measure, Manage using AI RMF outcomes.",
+      "output": "Maturity scorecard and roadmap",
+      "status": "template_available"
+    },
+    {
+      "id": "EVAL-03",
+      "name": "EU AI Act compliance gap assessment",
+      "type": "regulatory-assessment",
+      "scope": "AI systems placed in the EU",
+      "method": "Classify systems against EU AI Act risk tiers and identify obligations and gaps.",
+      "output": "Compliance gap register",
+      "status": "template_available"
+    },
+    {
+      "id": "EVAL-04",
+      "name": "Agentic AI threat assessment",
+      "type": "technical-control-assessment",
+      "scope": "Agentic AI systems and their tool surface",
+      "method": "Apply OWASP Agentic AI risks and MITRE ATLAS to enumerate agent-specific threats and controls.",
+      "output": "Threat register and control map",
+      "status": "template_available"
+    }
+  ]
+}

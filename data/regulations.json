@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-11-02",
+  "regulations": [
+    {
+      "id": "reg-eu-ai-act",
+      "name": "EU Artificial Intelligence Act",
+      "reference": "Regulation (EU) 2024/1689",
+      "jurisdiction": "European Union",
+      "status": "in_force",
+      "in_force_date": "2024-08-01",
+      "key_deadlines": {
+        "prohibitions": "2025-02-02",
+        "general_application": "2026-08-02",
+        "high_risk_majority": "2026-08-02",
+        "high_risk_annex_iii_remaining": "2027-08-02"
+      },
+      "scope": "AI systems placed on the EU market or used in the EU",
+      "summary": "Risk-based framework: prohibited practices, high-risk systems, GPAI, transparency, governance.",
+      "source_id": "eu-ai-act"
+    },
+    {
+      "id": "reg-gdpr",
+      "name": "General Data Protection Regulation",
+      "reference": "Regulation (EU) 2016/679",
+      "jurisdiction": "European Union / EEA",
+      "status": "in_force",
+      "in_force_date": "2018-05-25",
+      "key_deadlines": {},
+      "scope": "Processing of personal data of EU/EEA data subjects",
+      "summary": "Data protection applicable to AI systems processing personal data; DPIA, transparency, rights.",
+      "source_id": "gdpr"
+    },
+    {
+      "id": "reg-nist-ai-rmf",
+      "name": "NIST AI Risk Management Framework (voluntary)",
+      "reference": "AI RMF 1.0",
+      "jurisdiction": "United States (voluntary)",
+      "status": "adopted_voluntary",
+      "in_force_date": "2023-01-26",
+      "key_deadlines": {},
+      "scope": "US federal agencies and organizations managing AI risk",
+      "summary": "Voluntary framework for trustworthy AI and risk management.",
+      "source_id": "nist-ai-rmf-1.0"
+    },
+    {
+      "id": "reg-caida",
+      "name": "US Executive Order & DOD/CAIDA (context)",
+      "reference": "US AI policy landscape",
+      "jurisdiction": "United States",
+      "status": "actively_evolving",
+      "in_force_date": null,
+      "key_deadlines": {},
+      "scope": "US federal AI governance and sector regulation",
+      "summary": "Landscape of US executive actions and agency guidance; check current state on each run.",
+      "source_id": "cisa-ai-security"
+    },
+    {
+      "id": "reg-uk-ai",
+      "name": "UK AI Regulation (context)",
+      "reference": "UK pro-innovation approach",
+      "jurisdiction": "United Kingdom",
+      "status": "actively_evolving",
+      "in_force_date": null,
+      "key_deadlines": {},
+      "scope": "UK AI use across sectors",
+      "summary": "Sector-led, principles-based approach; verify current instruments on each run.",
+      "source_id": null
+    }
+  ]
+}

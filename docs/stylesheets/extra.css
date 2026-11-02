@@ -1,0 +1,25 @@
+:root > * {
+  --md-primary-fg-color: #283593;
+  --md-primary-fg-color--light: #5f5fc4;
+  --md-primary-fg-color--dark: #000063;
+  --md-accent-fg-color: #c62828;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+}
+
+.md-typeset .site-badge {
+  display: inline-block;
+  background: var(--md-primary-fg-color);
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.md-grid {
+  max-width: 75rem;
+}
