@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-04",
   "remediation_actions": [
     {
       "vulnerability_id": "VULN-LLM01-PROMPT-INJECTION",
@@ -57,6 +57,54 @@
       "priority": "high",
       "owners": ["privacy", "application-security"],
       "evidence": "DPIA completion; redaction test evidence; retrieval access audit"
+    },
+    {
+      "vulnerability_id": "VULN-AGENT-MCP-AUTH-RCE",
+      "action": "Upgrade agent frameworks to patched versions (Langflow >= 1.13.0) and disable automatic login in production",
+      "type": "technical",
+      "priority": "critical",
+      "owners": ["platform-engineering", "security-operations"],
+      "evidence": "Version audit; LANGFLOW_AUTO_LOGIN disabled; penetration test of MCP endpoint"
+    },
+    {
+      "vulnerability_id": "VULN-AGENT-MCP-AUTH-RCE",
+      "action": "Restrict and authenticate access to MCP tool endpoints; do not expose them to untrusted networks",
+      "type": "technical",
+      "priority": "critical",
+      "owners": ["platform-engineering"],
+      "evidence": "Network access control; authentication enforcement test evidence"
+    },
+    {
+      "vulnerability_id": "VULN-AI-CODE-SANDBOX-ESCAPE",
+      "action": "Patch AI-generated code sandboxes and revoke host permissions before executing generated code",
+      "type": "technical",
+      "priority": "critical",
+      "owners": ["platform-engineering"],
+      "evidence": "Upgrade log (prefab-ui >= 0.21.0, Beta9 >= 0.1.756/0.1.776); sandbox escape regression test"
+    },
+    {
+      "vulnerability_id": "VULN-AI-CODE-SANDBOX-ESCAPE",
+      "action": "Do not expose generative UI / code-execution tools to untrusted clients until patched",
+      "type": "process",
+      "priority": "high",
+      "owners": ["security-operations", "product"],
+      "evidence": "Exposure review; JFrog interim guidance applied"
+    },
+    {
+      "vulnerability_id": "VULN-AGENT-TOCTOU-WORKSPACE",
+      "action": "Upgrade agentic coding tools (Claude Code >= 2.1.251) and verify file-descriptor-anchored path handling",
+      "type": "technical",
+      "priority": "high",
+      "owners": ["platform-engineering", "security-operations"],
+      "evidence": "Version audit; workspace-escape regression test"
+    },
+    {
+      "vulnerability_id": "VULN-AGENT-TOCTOU-WORKSPACE",
+      "action": "Pin and review repositories, dependency install scripts, and plugins before agent session use",
+      "type": "process",
+      "priority": "high",
+      "owners": ["application-security", "security-operations"],
+      "evidence": "Repo/plugin allowlist; pre-session review policy"
     },
     {
       "vulnerability_id": "ALL",

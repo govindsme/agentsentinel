@@ -1,16 +1,16 @@
 {
   "schema_version": "1.0.0",
-  "last_updated": "2026-11-02",
-  "site_version": "1.0.0",
+  "last_updated": "2026-11-04",
+  "site_version": "1.1.0",
   "repo": "govindsme/agentsentinel",
   "site_url": "https://govindsme.github.io/agentsentinel/",
-  "previous_research_cutoff": null,
-  "previous_vulnerability_cutoff": null,
-  "current_research_cutoff": "2026-11-02",
-  "current_vulnerability_cutoff": "2026-11-02",
-  "operating_mode": "first_run",
-  "last_successful_run": null,
-  "runs_total": 1,
-  "status": "initialized",
-  "notes": "First run establishing the initial content baseline and information architecture for the Agent Sentinel AI security and governance site."
+  "previous_research_cutoff": "2026-11-02",
+  "previous_vulnerability_cutoff": "2026-11-02",
+  "current_research_cutoff": "2026-11-04",
+  "current_vulnerability_cutoff": "2026-11-04",
+  "operating_mode": "incremental",
+  "last_successful_run": "2026-11-04",
+  "runs_total": 2,
+  "status": "complete",
+  "notes": "Incremental reconciliation run: added agentic/MCP AI vulnerabilities discovered since 2026-11-02 (Langflow, Prefab UI, Claude Code, MCPhantom); updated EU AI Act timeline per Digital Omnibus on AI (Regulation (EU) 2026/1744); incorporated OWASP GenAI LLM Top 10 2026 and OWASP Agentic Top 10 2026 rankings; reconciled first-run metadata (first run was complete)."
 }

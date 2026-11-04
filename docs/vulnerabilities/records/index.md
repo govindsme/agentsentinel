@@ -56,6 +56,36 @@ synthesizes them for reference. For the authoritative status, see
 - **Remediation:** Data minimization; output redaction/filtering; retrieval access controls; DPIA.
 - **Aliases:** sensitive information disclosure, LLM09.
 
+## VULN-AGENT-MCP-AUTH-RCE — Critical
+
+- **Category:** Agentic AI / MCP · **CWE:** CWE-306 / CWE-94 · **Baseline CVSSv4:** 9.8
+- **Description:** Agent frameworks expose unauthenticated MCP endpoints letting remote attackers bypass
+  authentication and achieve remote code execution (e.g., via `LANGFLOW_AUTO_LOGIN` defaults or MCP tool enumeration).
+- **Affected scope:** MCP servers, agent workflow frameworks (e.g., Langflow <= 1.12.8), default-credential configs.
+- **Remediation:** Upgrade (Langflow >= 1.13.0); disable automatic login in production; restrict/authenticate MCP endpoints.
+- **CVEs:** CVE-2026-93680, CVE-2026-110186 (plus CVE-2026-110193, CVE-2026-110192).
+- **Aliases:** Langflow CVE-2026-93680, MCP authentication bypass, MCP tool enumeration RCE.
+
+## VULN-AI-CODE-SANDBOX-ESCAPE — Critical
+
+- **Category:** AI Application / Sandboxing · **CWE:** CWE-269 / CWE-74 · **Baseline CVSSv4:** 9.9
+- **Description:** Sandboxes executing model-written code start with excessive host privileges, letting generated
+  code read/write host files or reach host systems as the server user.
+- **Affected scope:** AI-generated code runners/sandboxes, generative UI tools (Prefab), serverless agent runtimes (Beta9).
+- **Remediation:** Revoke host permissions before accepting code (prefab-ui >= 0.21.0, Beta9 worker 0.1.756/gateway 0.1.776); do not expose to untrusted clients; run with least privilege.
+- **CVEs:** CVE-2026-120338, CVE-2026-120307.
+- **Aliases:** Prefab UI CVE-2026-120338, AI-powered code sandbox escape.
+
+## VULN-AGENT-TOCTOU-WORKSPACE — High
+
+- **Category:** Agentic AI / Coding Agent · **CWE:** CWE-59 / CWE-367 · **Baseline CVSSv4:** 7.7
+- **Description:** A check-then-use (TOCTOU) flaw in an agentic coding tool lets attacker-controlled code swap a
+  validated path for a symlink, escaping the workspace to overwrite user files outside it.
+- **Affected scope:** Agentic coding assistants (e.g., Claude Code Edit tool before 2.1.251).
+- **Remediation:** Upgrade (Claude Code >= 2.1.251); pin/review repos, deps, and plugins before sessions.
+- **CVEs:** CVE-2026-88968.
+- **Aliases:** Claude Code edit-tool TOCTOU, agentic workspace escape.
+
 ## Related records
 
 These records are maintained in repo `data/` files. For the consolidated view see the

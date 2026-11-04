@@ -4,19 +4,20 @@ This page tracks research and vulnerability discovery cut-offs for the site. The
 authoritative machine-readable state is in `data/research-state.json`.
 
 !!! note "Operating mode"
-    The site is currently in **First Run** mode, establishing the initial baseline.
+    The site is currently in **Incremental Reconciliation** mode, applying delta changes since
+    the last successful run (2026-11-02).
 
 ## Current state
 
 | Field | Value |
 |-------|-------|
-| **Site version** | 1.0.0 |
-| **Research cutoff** | 2026-11-02 |
-| **Vulnerability cutoff** | 2026-11-02 |
-| **Previous research cutoff** | _(none - first run)_ |
-| **Previous vulnerability cutoff** | _(none - first run)_ |
-| **Last successful run** | _(none yet - first run in progress)_ |
-| **Operating mode** | first_run |
+| **Site version** | 1.1.0 |
+| **Research cutoff** | 2026-11-04 |
+| **Vulnerability cutoff** | 2026-11-04 |
+| **Previous research cutoff** | 2026-11-02 |
+| **Previous vulnerability cutoff** | 2026-11-02 |
+| **Last successful run** | 2026-11-04 |
+| **Operating mode** | incremental |
 
 ## Why cutoffs matter
 

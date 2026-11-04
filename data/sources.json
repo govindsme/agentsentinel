@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-04",
   "sources": [
     {
       "id": "nist-ai-rmf-1.0",
@@ -61,6 +61,36 @@
       "published": "2024-07-12",
       "authority": "lawful",
       "notes": "First comprehensive AI law; risk-based framework with prohibitions, high-risk requirements, GPAI obligations, and transparency."
+    },
+    {
+      "id": "eu-digital-omnibus-ai",
+      "title": "Regulation (EU) 2026/1744 - Digital Omnibus on AI (amending the AI Act)",
+      "org": "European Union",
+      "type": "regulation",
+      "url": "https://www.consilium.europa.eu/en/policies/artificial-intelligence-act/timeline-artificial-intelligence/",
+      "published": "2026-07-24",
+      "authority": "lawful",
+      "notes": "First substantive amendment to the AI Act (in force 2026-07-27). Postpones high-risk application to 2 Dec 2027 / 2 Aug 2028, adds Article 5 prohibitions on AI-generated CSAM and non-consensual intimate imagery, and sets transparency/watermarking deadlines."
+    },
+    {
+      "id": "owasp-genai-llm-2026",
+      "title": "OWASP GenAI Security Project - Top 10 for LLM Applications 2026",
+      "org": "OWASP",
+      "type": "guidance",
+      "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+      "published": "2026-08-03",
+      "authority": "high",
+      "notes": "2026 edition of the LLM Top 10. Excessive Agency rose to LLM03; System Prompt Leakage became Hidden Context Exposure (LLM08); adds Unbounded Consumption, Misinformation, Vector/Embedding Weaknesses. Maps to MITRE ATLAS, CWE, NIST AI 600-1, and OWASP Agentic Top 10."
+    },
+    {
+      "id": "owasp-agentic-2026",
+      "title": "OWASP GenAI Security Project - Top 10 for Agentic Applications 2026",
+      "org": "OWASP",
+      "type": "guidance",
+      "url": "https://genai.owasp.org/download/52117/",
+      "published": "2026-12-05",
+      "authority": "high",
+      "notes": "2026 edition of the Agentic Top 10 (ASI01-ASI10): Agent Goal Hijack, Tool Misuse, Identity & Privilege Abuse, Agentic Supply Chain, Unexpected RCE, Memory & Context Poisoning, Insecure Agent-to-Agent Communication, Cascading Failures, Human-Agent Trust Exploitation, Rogue Agents."
     },
     {
       "id": "iso-iec-42001",
@@ -141,6 +171,46 @@
       "published": "2021-09-01",
       "authority": "high",
       "notes": "Foundational web application security risks referenced across AI systems."
+    },
+    {
+      "id": "ibm-langflow-advisory",
+      "title": "IBM security incident advisory - Langflow critical vulnerabilities",
+      "org": "IBM (Langflow maintainer)",
+      "type": "advisory",
+      "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+      "published": "2026-11-02",
+      "authority": "high",
+      "notes": "CVE-2026-93680, CVE-2026-110186, CVE-2026-110193, CVE-2026-110192; fixed in Langflow 1.13.0 (2026-10-22). Includes unauthenticated RCE via MCP tool enumeration."
+    },
+    {
+      "id": "jfrog-prefab-advisory",
+      "title": "JFrog - Prefab UI generative sandbox sandbox escape (CVE-2026-120338)",
+      "org": "JFrog research",
+      "type": "advisory",
+      "url": "https://www.sanctity.ai/signal/jfrog-prefab-sandbox-rce-e069",
+      "published": "2026-11-01",
+      "authority": "high",
+      "notes": "CVSS 10.0; model-written Python ran with unrestricted host read/write/network permissions; fixed in prefab-ui 0.21.0."
+    },
+    {
+      "id": "claude-code-cve-88968",
+      "title": "CVE-2026-88968 - Claude Code Edit-tool TOCTOU workspace escape",
+      "org": "NVD / Anthropic",
+      "type": "advisory",
+      "url": "https://al-ice.ai/posts/2026/11/claude-code-cve-2026-88968-edit-tool-toctou-symlink-workspace-escape-november-2026/",
+      "published": "2026-11-03",
+      "authority": "high",
+      "notes": "CVSS 4.0 7.7; link-following/TOCTOU (CWE-59, CWE-367) let attacker-controlled code escape the workspace and overwrite user files; fixed in Claude Code 2.1.251."
+    },
+    {
+      "id": "mcphantom-supply-chain",
+      "title": "MCPhantom - AI coding agents installing deprecated MCP servers with unpatched RCE",
+      "org": "Glow Labs",
+      "type": "research",
+      "url": "https://theinjection.dev/week/2026-w45/",
+      "published": "2026-11-02",
+      "authority": "medium",
+      "notes": "AI coding agents select deprecated MCP servers out of training data and install them; archived servers carry high-severity flaws including a prompt-injection RCE with no fix."
     }
   ]
 }

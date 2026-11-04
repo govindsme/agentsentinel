@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-04",
   "claims": [
     {
       "id": "C-001",
@@ -71,6 +71,46 @@
       "verified": true,
       "verified_on": "2026-11-02",
       "notes": "Title III obligations for high-risk systems."
+    },
+    {
+      "id": "C-008",
+      "claim": "The Digital Omnibus on AI (Regulation (EU) 2026/1744) postponed EU AI Act application for stand-alone high-risk (Annex III) systems to 2 December 2027 and for high-risk systems embedded in regulated products (Annex I) to 2 August 2028.",
+      "claim_type": "sourced_fact",
+      "source_id": "eu-digital-omnibus-ai",
+      "confidence": "high",
+      "verified": true,
+      "verified_on": "2026-11-04",
+      "notes": "In force 27 July 2026; the first substantive amendment to the AI Act."
+    },
+    {
+      "id": "C-009",
+      "claim": "The Digital Omnibus on AI adds new Article 5 prohibitions for AI-generated child sexual abuse material and non-consensual intimate imagery, effective 2 December 2026, and sets the watermarking deadline for AI-generated content of tools already on the market to 2 December 2026.",
+      "claim_type": "sourced_fact",
+      "source_id": "eu-digital-omnibus-ai",
+      "confidence": "high",
+      "verified": true,
+      "verified_on": "2026-11-04",
+      "notes": "New providers must watermark from first day of market placement after 2 Aug 2026."
+    },
+    {
+      "id": "C-010",
+      "claim": "In the OWASP GenAI LLM Top 10 2026, Excessive Agency rose to third place (from its prior rank), and System Prompt Leakage was replaced by the broader Hidden Context Exposure category.",
+      "claim_type": "sourced_fact",
+      "source_id": "owasp-genai-llm-2026",
+      "confidence": "high",
+      "verified": true,
+      "verified_on": "2026-11-04",
+      "notes": "The 2026 methodology weighted ~6,639 documented real-world incidents at 25% alongside 75% expert-practitioner consensus."
+    },
+    {
+      "id": "C-011",
+      "claim": "Agentic and Model Context Protocol (MCP)-based tooling is an emerging, actively exploited risk surface, with unauthenticated authentication bypasses and remote code execution reported in AI agent frameworks (e.g., Langflow) since 2026.",
+      "claim_type": "sourced_fact",
+      "source_id": "ibm-langflow-advisory",
+      "confidence": "medium",
+      "verified": true,
+      "verified_on": "2026-11-04",
+      "notes": "CVE-2026-93680 (auth bypass) and CVE-2026-110186 (unauthenticated RCE via MCP tool enumeration) fixed in Langflow 1.13.0."
     }
   ]
 }

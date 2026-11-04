@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-04",
   "vulnerabilities": [
     {
       "id": "VULN-LLM01-PROMPT-INJECTION",
@@ -115,6 +115,61 @@
       "source_ids": ["owasp-top10-llm", "gdpr"],
       "discovered": "2023-01-01",
       "last_assessed": "2026-11-02"
+    },
+    {
+      "id": "VULN-AGENT-MCP-AUTH-RCE",
+      "title": "Agent framework authentication bypass and unauthenticated remote code execution via MCP",
+      "category": "Agentic AI / MCP Tooling",
+      "cwe": "CWE-306 (Missing Authentication), CWE-94 (Improper Control of Generation of Code), CWE-306/CWE-287",
+      "cvss_v4_baseline": "9.8",
+      "severity": "critical",
+      "affected_components": [
+        "Model Context Protocol (MCP) servers",
+        "AI agent workflow frameworks (e.g., Langflow)",
+        "Automated-login / default-credential configurations"
+      ],
+      "status": "active",
+      "description": "AI agent frameworks expose unauthenticated MCP endpoints that let remote attackers bypass authentication and achieve remote code execution, often through automatic-login defaults or MCP tool enumeration.",
+      "remediation_summary": "Upgrade to patched versions (Langflow >= 1.13.0); disable automatic login in production; restrict MCP endpoint exposure; apply authentication and network controls to MCP servers.",
+      "source_ids": ["ibm-langflow-advisory"],
+      "discovered": "2026-10-22",
+      "last_assessed": "2026-11-04"
+    },
+    {
+      "id": "VULN-AI-CODE-SANDBOX-ESCAPE",
+      "title": "Sandbox escape in AI-generated code execution",
+      "category": "AI Application / Sandboxing",
+      "cwe": "CWE-269 (Improper Privilege Management), CWE-74 (Injection)",
+      "cvss_v4_baseline": "9.9",
+      "severity": "critical",
+      "affected_components": [
+        "AI-generated code runners / sandboxes",
+        "Generative UI tools (e.g., Prefab Generative UI)",
+        "Serverless agent runtimes (e.g., Beta9)"
+      ],
+      "status": "active",
+      "description": "Sandboxes that execute model-written code start with excessive privileges, letting generated code read/write host files or reach host systems as the server user.",
+      "remediation_summary": "Revoke read/write/network permissions before accepting code (fixed in prefab-ui 0.21.0, Beta9 worker 0.1.756/gateway 0.1.776); avoid exposing generative tools to untrusted clients; run with least privilege and isolation.",
+      "source_ids": ["jfrog-prefab-advisory"],
+      "discovered": "2026-10-26",
+      "last_assessed": "2026-11-04"
+    },
+    {
+      "id": "VULN-AGENT-TOCTOU-WORKSPACE",
+      "title": "Agentic coding tool time-of-check/time-of-use (TOCTOU) workspace escape",
+      "category": "Agentic AI / Coding Agent",
+      "cwe": "CWE-59 (Link Following), CWE-367 (TOCTOU)",
+      "cvss_v4_baseline": "7.7",
+      "severity": "high",
+      "affected_components": [
+        "Agentic coding assistants (e.g., Claude Code Edit tool)"
+      ],
+      "status": "active",
+      "description": "A pathname validation divorced from file-descriptor-anchored use lets attacker-controlled code swap a validated path for a symlink, causing an unsandboxed edit/write path to overwrite user files outside the workspace.",
+      "remediation_summary": "Upgrade to patched version (Claude Code >= 2.1.251); pin and review repos, dependency installs, and plugins before agent sessions; verify file-descriptor-anchored path handling.",
+      "source_ids": ["claude-code-cve-88968"],
+      "discovered": "2026-10-26",
+      "last_assessed": "2026-11-04"
     }
   ]
 }

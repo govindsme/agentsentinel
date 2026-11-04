@@ -17,6 +17,8 @@ source registry is in `data/sources.json`.
 | Source | Organisation | Type |
 |--------|--------------|------|
 | [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) | OWASP | Guidance |
+| [OWASP GenAI LLM Top 10 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) | OWASP | Guidance |
+| [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/download/52117/) | OWASP | Guidance |
 | [OWASP GenAI Security](https://genai.owasp.org/) | OWASP | Guidance |
 | [OWASP Top 10 for Agentic AI](https://genai.owasp.org/resource/owasp-top-10-for-agentic-ai/) | OWASP | Guidance |
 | [MITRE ATLAS](https://atlas.mitre.org/) | MITRE | Threat model |
@@ -29,6 +31,7 @@ source registry is in `data/sources.json`.
 | Source | Reference |
 |--------|-----------|
 | [EU AI Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) | Regulation (EU) 2024/1689 |
+| [Digital Omnibus on AI](https://www.consilium.europa.eu/en/policies/artificial-intelligence-act/timeline-artificial-intelligence/) | Regulation (EU) 2026/1744 |
 | [GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj) | Regulation (EU) 2016/679 |
 
 ## Notes on citation and authority

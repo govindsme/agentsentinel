@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-04",
   "frameworks": [
     {
       "id": "nist-ai-rmf",
@@ -29,11 +29,11 @@
       "name": "OWASP Top 10 for LLM Applications",
       "org": "OWASP",
       "type": "technical-control-baseline",
-      "version": "2025",
+      "version": "2026",
       "functions": ["LLM01..LLM10"],
       "purpose": "Most critical security risks in LLM applications and technical mitigations.",
-      "source_id": "owasp-top10-llm",
-      "notes": "Risk categories updated in 2025 release."
+      "source_id": "owasp-genai-llm-2026",
+      "notes": "2026 edition (2026-08-03). LLM01 Prompt Injection, LLM02 Sensitive Information Disclosure, LLM03 Excessive Agency (up from 6th), LLM04 Supply Chain, LLM05 Data & Model Poisoning, LLM06 Unbounded Consumption, LLM07 Misinformation, LLM08 Hidden Context Exposure, LLM09 Vector & Embedding Weaknesses, LLM10 Improper Output Handling."
     },
     {
       "id": "mitre-atlas",
@@ -59,14 +59,14 @@
     },
     {
       "id": "owasp-agentic-ai",
-      "name": "OWASP Top 10 for Agentic AI",
+      "name": "OWASP Top 10 for Agentic Applications",
       "org": "OWASP",
       "type": "technical-control-baseline",
-      "version": "2025",
-      "functions": ["Agentic AI risks 1-10"],
-      "purpose": "Top risks specific to agentic AI systems including tooling, delegation, and autonomy.",
-      "source_id": "owasp-agentic-ai-risks",
-      "notes": "Complements the LLM Top 10."
+      "version": "2026",
+      "functions": ["ASI01..ASI10"],
+      "purpose": "Top risks specific to agentic AI systems including tooling, delegation, memory, and autonomy.",
+      "source_id": "owasp-agentic-2026",
+      "notes": "2026 edition (ASI01-ASI10). Complements the LLM Top 10; use both when a model acts as an agent with tools, memory, and downstream consequences."
     }
   ]
 }

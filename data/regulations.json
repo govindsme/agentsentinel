@@ -1,22 +1,26 @@
 {
   "schema_version": "1.0.0",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-04",
   "regulations": [
     {
       "id": "reg-eu-ai-act",
-      "name": "EU Artificial Intelligence Act",
-      "reference": "Regulation (EU) 2024/1689",
+      "name": "EU Artificial Intelligence Act (as amended by the Digital Omnibus on AI)",
+      "reference": "Regulation (EU) 2024/1689, amended by Regulation (EU) 2026/1744",
       "jurisdiction": "European Union",
       "status": "in_force",
       "in_force_date": "2024-08-01",
       "key_deadlines": {
         "prohibitions": "2025-02-02",
-        "general_application": "2026-08-02",
-        "high_risk_majority": "2026-08-02",
-        "high_risk_annex_iii_remaining": "2027-08-02"
+        "gpaio": "2025-08-02",
+        "transparency_article50": "2026-08-02",
+        "watermarking_existing_tools": "2026-12-02",
+        "new_csam_intimate_content_prohibitions": "2026-12-02",
+        "high_risk_annex_iii": "2027-12-02",
+        "high_risk_annex_i_regulated_products": "2028-08-02",
+        "regulatory_sandboxes": "2027-12-02"
       },
       "scope": "AI systems placed on the EU market or used in the EU",
-      "summary": "Risk-based framework: prohibited practices, high-risk systems, GPAI, transparency, governance.",
+      "summary": "Risk-based framework: prohibited practices, high-risk systems, GPAI, transparency, governance. Regulation (EU) 2026/1744 (Digital Omnibus on AI, in force 2026-07-27) postponed high-risk application to 2027-12-02 / 2028-08-02, added new Article 5 prohibitions (AI-generated CSAM and non-consensual intimate imagery), and set transparency/watermarking dates.",
       "source_id": "eu-ai-act"
     },
     {

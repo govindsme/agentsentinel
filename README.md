@@ -1,6 +1,6 @@
 # Agent Sentinel
 
-**AI Security & Governance Reference** · _v1.0.0_
+**AI Security & Governance Reference** · _v1.1.0_
 
 🌐 **Live static site:** <https://govindsme.github.io/agentsentinel/>
 
@@ -47,9 +47,14 @@ mkdocs serve
 
 ## Versioning
 
-This repository follows **Semantic Versioning** (SemVer). The current version is **v1.0.0**.
+This repository follows **Semantic Versioning** (SemVer). The current version is **v1.1.0**.
 Functional changes advance **major**/**minor**/**patch** accordingly; see
 [Update History](docs/research/update-history.md).
+
+> **What's new in v1.1.0:** Adds new agentic/MCP AI vulnerabilities discovered since the
+> 2026-11-02 cutoff (Langflow, Prefab UI, Claude Code, MCPhantom supply-chain), reflects the
+> EU AI Act **Digital Omnibus on AI** (Regulation (EU) 2026/1744) timeline, and incorporates
+> the **OWASP GenAI LLM Top 10 2026** and **OWASP Agentic Top 10 2026** rankings.
 
 ## Disclaimer
 

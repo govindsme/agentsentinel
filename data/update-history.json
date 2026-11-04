@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-04",
   "update_history": [
     {
       "date": "2026-11-02",
@@ -9,9 +9,22 @@
       "mode": "first_run",
       "summary": "Initial build of the Agent Sentinel AI security and governance knowledge site. Established information architecture, structured data records, templates, validation, and GitHub Pages deployment.",
       "statistics": {
-        "pages_created": 0,
+        "pages_created": 24,
         "data_records_created": true,
-        "validation_passed": null
+        "validation_passed": true
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "version": "1.1.0",
+      "run": "run-2026-11-04-v1.1.0",
+      "mode": "incremental",
+      "summary": "Incremental reconciliation. Added 3 agentic/MCP AI vulnerabilities (Langflow MCP auth bypass & RCE, AI-generated code sandbox escape, agentic coding TOCTOU workspace escape). Updated EU AI Act timeline for the Digital Omnibus on AI (Regulation (EU) 2026/1744). Incorporated OWASP GenAI LLM Top 10 2026 and OWASP Agentic Top 10 2026. Reconciled first-run metadata (first run was complete).",
+      "statistics": {
+        "pages_updated": 3,
+        "vulnerabilities_added": 3,
+        "data_records_updated": true,
+        "validation_passed": true
       }
     }
   ]

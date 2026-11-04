@@ -14,11 +14,14 @@ The underlying machine-readable records are in `data/vulnerabilities.json` and r
 | [VULN-MODEL-EXTRACTION](records/index.md) | Model & data extraction | Model Security | High | Active |
 | [VULN-EXCESSIVE-AGENCY](records/index.md) | Excessive agency (agentic) | Agentic AI | Critical | Active |
 | [VULN-SENSITIVE-DISCLOSURE](records/index.md) | Sensitive information disclosure | Privacy / LLM | High | Active |
+| [VULN-AGENT-MCP-AUTH-RCE](records/index.md) | Agent framework MCP auth bypass & RCE | Agentic AI / MCP | Critical | Active |
+| [VULN-AI-CODE-SANDBOX-ESCAPE](records/index.md) | AI-generated code sandbox escape | AI Application | Critical | Active |
+| [VULN-AGENT-TOCTOU-WORKSPACE](records/index.md) | Agentic coding tool TOCTOU workspace escape | Agentic AI | High | Active |
 
 ## State summary
 
-- **Total tracked:** 6 · **Active:** 6 · **Resolved:** 0
-- **Critical:** 2 · **High:** 4
+- **Total tracked:** 9 · **Active:** 9 · **Resolved:** 0
+- **Critical:** 4 · **High:** 5
 
 See [Vulnerability State](records/index.md) for the authoritative snapshot from
 `data/vulnerability-state.json`.

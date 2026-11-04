@@ -220,3 +220,19 @@ data/
 
 reports/
   runs/
+---
+
+## 6. Repository State (current)
+
+Snapshot of the current operational state, updated at the end of each successful run.
+
+- **Current version:** v1.1.0 (SemVer; see `VERSION`, README, `data/update-history.json`).
+- **Live site:** https://govindsme.github.io/agentsentinel/ (GitHub Pages, mkdocs-material; deployed via `.github/workflows/deploy.yml`).
+- **Operating mode:** incremental reconciliation (no longer first_run). The first run (v1.0.0, 2026-11-02) is complete and validated; cut-offs were advanced on 2026-11-02 and again on 2026-11-04.
+- **Research & vulnerability cut-offs:** `data/research-state.json` holds the authoritative state. Cut-offs advance only after validation succeeds.
+- **Validate/build:** `./scripts/build.sh` (runs `scripts/validate.py` then `mkdocs build --strict`); `site/` is generated output.
+- **Content scope:** AI security domains, threats/controls/crosswalks, regulations (EU AI Act incl. Digital Omnibus on AI Regulation (EU) 2026/1744, NIST AI RMF, ISO/IEC 42001), vulnerabilities (incl. agentic/MCP risk class), governance templates, glossary, sources, change tracking.
+- **Editorial guardrails:** evidence-based, traceable to authoritative sources, safe for public publication, conservative when evidence is uncertain; never legal advice.
+- **Key recurring task:** on every run, reconcile AI vulnerabilities and the regulatory/framework landscape (EU AI Act deadlines, OWASP GenAI LLM 2026 / Agentic 2026, NIST) since the prior cut-off.
+
+This file is a human/agent operating manual, not part of the published site rendering.

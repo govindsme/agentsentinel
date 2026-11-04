@@ -50,8 +50,28 @@ Every capability is a new attack surface and a new path to unintended consequenc
 - **Approval-gate tests**: verify high-impact actions require human approval.
 - **Logging review**: confirm complete traceability of agent decisions and actions.
 
+## Model Context Protocol (MCP) risk surface
+
+MCP servers expose agent capabilities as callable tools, adding a **trust and authentication**
+boundary that has become an active attack surface:
+
+- **Unauthenticated/under-authenticated MCP endpoints** — agent frameworks exposing MCP tool
+  enumeration with automatic-login defaults have allowed remote authentication bypass and
+  remote code execution (e.g., Langflow CVE-2026-93680, CVE-2026-110186; fixed in 1.13.0).
+- **Prompt-injected tool arguments** — crafted content can reach host command execution
+  through MCP tool parameters that are interpolated into shell or code runners.
+- **Agentic supply chain** — AI coding agents have been observed installing **deprecated or
+  archived MCP servers** carrying unpatched, high-severity flaws (see "MCPhantom" reporting).
+- **Path/sandbox escapes** — agent tools and code runners must not trust pathname validation
+  divorced from file-descriptor-anchored use (e.g., Claude Code CVE-2026-88968 TOCTOU).
+
+Follow the OWASP GenAI and OWASP Agentic 2026 guidance together: use the LLM Top 10 when the
+model is a **component** of an application, and the Agentic Top 10 (ASI01–ASI10) once the model
+**acts** with tools, memory, and consequences.
+
 ## References
 
-- [OWASP Agentic AI - Threats and Mitigations](https://genai.owasp.org/)
-- [OWASP Top 10 for Agentic AI](https://genai.owasp.org/resource/owasp-top-10-for-agentic-ai/)
+- [OWASP GenAI Security Project](https://genai.owasp.org/)
+- [OWASP GenAI LLM Top 10 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/)
+- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/download/52117/)
 - [MITRE ATLAS](https://atlas.mitre.org/)

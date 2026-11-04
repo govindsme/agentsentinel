@@ -9,6 +9,7 @@ rejected, validation results, and cut-off advancement. Reports are stored in
 | Date | Version | Mode | Outcome | Report |
 |------|---------|------|---------|--------|
 | 2026-11-02 | 1.0.0 | First Run | Complete | [Run 001](https://github.com/govindsme/agentsentinel/blob/main/reports/runs/run-2026-11-02-v1.0.0.md) |
+| 2026-11-04 | 1.1.0 | Incremental | Complete | [Run 002](https://github.com/govindsme/agentsentinel/blob/main/reports/runs/run-2026-11-04-v1.1.0.md) |
 
 ## What a run report contains
 
